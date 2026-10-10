@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayrest Harare: Holiday Homes, Luxury Hotels & Stays in Harare, Zimbabwe</title>
+  <meta name="description" content="Plan your trip to Harare with Dayrest Harare. Book top-rated luxury hotels, boutique lodges in Borrowdale, Newlands, and city centre with member prices, free cancellation, and 24/7 support.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       GLOBAL SITE HEADER (EXPEDIA UK STYLE)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" title="Dayrest Harare - An Expedia-style travel portal">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Dayrest<span>Harare</span></span>
+            <span class="brand-tagline">Expedia Travel Clone</span>
+          </div>
+        </a>
+
+        <!-- Category Nav -->
+        <nav class="category-nav" aria-label="Main travel categories">
+          <a href="#stays" class="nav-item active">
+            <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+            Stays
+          </a>
+          <a href="#flights" class="nav-item">
+            <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+            Flights
+          </a>
+          <a href="#cars" class="nav-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            Car Hire
+          </a>
+          <a href="#holidays" class="nav-item">
+            <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            Packages
+          </a>
+          <a href="#activities" class="nav-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            Holiday Activities
+          </a>
+        </nav>
+      </div>
+
+      <!-- Utilities -->
+      <div class="header-right">
+        <!-- Currency Converter -->
+        <div class="currency-selector-box">
+          <label for="currency-select">Curr:</label>
+          <select id="currency-select" class="currency-select" aria-label="Select currency">
+            <option value="GBP">GBP (£)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="ZAR">ZAR (R)</option>
+          </select>
+        </div>
+
+        <!-- Extranet Portal Link for Hotel Suppliers -->
+        <a href="extranet.html" class="btn-extranet-link" title="Open Hotel Supplier Extranet & Supply Inventory">
+          <span class="extranet-dot"></span>
+          <span>Supplier Extranet</span>
+        </a>
+
+        <a href="#trips" class="btn-header-ghost">Trips</a>
+        <a href="#signin" class="btn-header-signin">Sign in</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SEARCH ENGINE MODULE (EXPEDIA SEARCH CARD)
+       ========================================================================= -->
+  <section class="hero-search-section">
+    <div class="container">
+      <div class="search-card-container">
+        
+        <!-- Category Selector -->
+        <div class="search-tab-bar">
+          <button class="search-tab-btn active">
+            <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+            Stays
+          </button>
+          <button class="search-tab-btn">
+            <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+            Flights
+          </button>
+          <button class="search-tab-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            Cars
+          </button>
+          <button class="search-tab-btn">
+            <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            Packages
+          </button>
+          <button class="search-tab-btn">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            Things to do
+          </button>
+        </div>
+
+        <!-- Search Form Grid -->
+        <div class="search-form-grid">
+          <!-- 1. Destination Input -->
+          <div class="search-field-box" id="box-destination">
+            <div class="search-field-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="search-field-content">
+              <span class="search-field-label">Where to?</span>
+              <input type="text" class="search-field-input" id="search-destination-input" value="Harare, Harare Province, Zimbabwe" autocomplete="off">
+            </div>
+
+            <!-- Autocomplete Dropdown -->
+            <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+          </div>
+
+          <!-- 2. Dates Input -->
+          <div class="search-field-box">
+            <div class="search-field-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+            </div>
+            <div class="search-field-content">
+              <span class="search-field-label">Dates</span>
+              <span class="search-field-value">10 Oct – 11 Oct 2026 (1 night)</span>
+            </div>
+          </div>
+
+          <!-- 3. Guests Input -->
+          <div class="search-field-box">
+            <div class="search-field-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+            <div class="search-field-content">
+              <span class="search-field-label">Travellers</span>
+              <span class="search-field-value">2 adults, 1 room</span>
+            </div>
+          </div>
+
+          <!-- 4. Submit CTA -->
+          <button class="btn-search-submit" id="btn-main-search">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            Search Hotels
+          </button>
+        </div>
+
+        <!-- Quick Filters -->
+        <div class="search-quick-filters">
+          <span style="font-size: 0.8rem; font-weight: 700; color: #5E6D77;">Popular filters:</span>
+          <button class="quick-filter-pill" data-filter="breakfast">🍳 Breakfast included</button>
+          <button class="quick-filter-pill" data-filter="cancellation">🛡️ Free cancellation</button>
+          <button class="quick-filter-pill" data-filter="pool">🏊 Pool</button>
+          <button class="quick-filter-pill" data-filter="top">⭐ Top Rated (9.0+)</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       REWARDS BANNER STRIP (ONE KEY / DAYREST REWARDS)
+       ========================================================================= -->
+  <div class="rewards-banner-strip">
+    <div class="container rewards-inner">
+      <div class="rewards-content">
+        <div class="rewards-icon-badge">1</div>
+        <div>
+          <span class="rewards-title">Dayrest Rewards • One Key™</span>
+          <span class="rewards-desc"> — Save an average of 15% on thousands of hotels with Member Prices in Harare.</span>
+        </div>
+      </div>
+      <button class="btn-rewards-join">Sign up for free</button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN RESULTS & FILTERS LAYOUT
+       ========================================================================= -->
+  <main class="main-results-section">
+    <div class="container">
+
+      <!-- Breadcrumbs & Heading -->
+      <div class="results-header-bar">
+        <div>
+          <div class="results-breadcrumbs">
+            <a href="index.html">Home</a> <span>›</span>
+            <a href="#zimbabwe">Zimbabwe</a> <span>›</span>
+            <a href="#harare">Harare Province</a> <span>›</span>
+            <span>Hotels in Harare</span>
+          </div>
+          <h1 class="results-title-count">Harare, Harare Province, Zimbabwe <span id="results-count-number">15 properties found</span></h1>
+        </div>
+
+        <!-- Sort Control -->
+        <div class="sort-control-box">
+          <label for="sort-hotels-select" class="sort-label">Sort by:</label>
+          <select id="sort-hotels-select" class="sort-select">
+            <option value="recommended">Recommended</option>
+            <option value="price_asc">Price: low to high</option>
+            <option value="price_desc">Price: high to low</option>
+            <option value="rating_desc">Guest rating + our picks</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Two Column Layout: Sidebar + Hotel Stream -->
+      <div class="results-layout">
+
+        <!-- ===================================================================
+             LEFT SIDEBAR: EXPEDIA SEARCH FILTERS
+             =================================================================== -->
+        <aside class="filters-sidebar" aria-label="Hotel search filters">
+          <div class="filter-header-row">
+            <h2 class="filter-main-title">Filter by</h2>
+            <button class="btn-reset-filters" id="btn-reset-filters">Clear all</button>
+          </div>
+
+          <!-- Search by Property Name -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Property name</h3>
+            <input type="text" id="filter-hotel-name" class="filter-search-input" placeholder="e.g. Meikles, Cresta, Amanzi...">
+          </div>
+
+          <!-- Price per night slider -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Price per night</h3>
+            <div class="price-slider-box">
+              <input type="range" id="filter-price-slider" class="price-slider" min="60" max="300" step="5" value="300">
+              <div class="price-range-labels">
+                <span>From £60</span>
+                <span>Max: <strong id="filter-price-label">£300</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guest Rating Radio -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Guest rating</h3>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="radio" name="guest_rating" value="0" class="filter-review-radio" checked>
+                  <span>Any rating</span>
+                </div>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="radio" name="guest_rating" value="9" class="filter-review-radio">
+                  <span>Wonderful 9.0+</span>
+                </div>
+                <span class="filter-count">(6)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="radio" name="guest_rating" value="8" class="filter-review-radio">
+                  <span>Very Good 8.0+</span>
+                </div>
+                <span class="filter-count">(12)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="radio" name="guest_rating" value="7" class="filter-review-radio">
+                  <span>Good 7.0+</span>
+                </div>
+                <span class="filter-count">(15)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Star Rating Checkboxes -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Star rating</h3>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="5" class="filter-star-checkbox">
+                  <span>5 stars</span>
+                </div>
+                <span class="filter-count">(3)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="4" class="filter-star-checkbox">
+                  <span>4 stars</span>
+                </div>
+                <span class="filter-count">(9)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="3" class="filter-star-checkbox">
+                  <span>3 stars</span>
+                </div>
+                <span class="filter-count">(3)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Neighborhoods in Harare -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Neighborhood</h3>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Harare CBD" class="filter-neighborhood-checkbox">
+                  <span>Harare CBD</span>
+                </div>
+                <span class="filter-count">(6)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Borrowdale" class="filter-neighborhood-checkbox">
+                  <span>Borrowdale</span>
+                </div>
+                <span class="filter-count">(3)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="The Avenues" class="filter-neighborhood-checkbox">
+                  <span>The Avenues</span>
+                </div>
+                <span class="filter-count">(1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Newlands" class="filter-neighborhood-checkbox">
+                  <span>Newlands</span>
+                </div>
+                <span class="filter-count">(1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Highlands" class="filter-neighborhood-checkbox">
+                  <span>Highlands</span>
+                </div>
+                <span class="filter-count">(1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Greendale" class="filter-neighborhood-checkbox">
+                  <span>Greendale</span>
+                </div>
+                <span class="filter-count">(1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Avondale" class="filter-neighborhood-checkbox">
+                  <span>Avondale</span>
+                </div>
+                <span class="filter-count">(1)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Popular Amenities -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Popular amenities</h3>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Pool" class="filter-amenity-checkbox">
+                  <span>Swimming Pool</span>
+                </div>
+                <span class="filter-count">(14)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Breakfast included" class="filter-amenity-checkbox">
+                  <span>Breakfast included</span>
+                </div>
+                <span class="filter-count">(15)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Free WiFi" class="filter-amenity-checkbox">
+                  <span>Free WiFi</span>
+                </div>
+                <span class="filter-count">(15)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Airport shuttle" class="filter-amenity-checkbox">
+                  <span>Airport shuttle</span>
+                </div>
+                <span class="filter-count">(7)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Spa" class="filter-amenity-checkbox">
+                  <span>Spa & Wellness</span>
+                </div>
+                <span class="filter-count">(4)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" value="Gym" class="filter-amenity-checkbox">
+                  <span>Fitness centre</span>
+                </div>
+                <span class="filter-count">(8)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Payment & Cancellation -->
+          <div class="filter-group">
+            <h3 class="filter-heading">Payment & policies</h3>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="filter-cancellation">
+                  <span>Fully refundable</span>
+                </div>
+                <span class="filter-count">(11)</span>
+              </label>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- ===================================================================
+             HOTEL STREAM: CARDS CONTAINER
+             =================================================================== -->
+        <section class="hotels-stream" id="hotels-stream-container" aria-label="Harare Hotel search listings">
+          <!-- Populated dynamically by app.js -->
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       EXPEDIA APP PROMO BANNER SECTION
+       ========================================================================= -->
+  <section class="app-promo-strip">
+    <div class="container app-promo-grid">
+      <div class="app-promo-content">
+        <h2>Carry Dayrest Harare wherever you travel</h2>
+        <p>Scan the QR code to access mobile-exclusive member rates, real-time gate & stay alerts, and instant messaging with Harare hotel concierges.</p>
+        
+        <div class="app-qr-box">
+          <svg class="qr-code-img" viewBox="0 0 100 100">
+            <!-- Simulated QR code pattern -->
+            <rect width="100" height="100" fill="#ffffff"/>
+            <rect x="10" y="10" width="25" height="25" fill="#00355F"/>
+            <rect x="15" y="15" width="15" height="15" fill="#ffffff"/>
+            <rect x="18" y="18" width="9" height="9" fill="#00355F"/>
+            <rect x="65" y="10" width="25" height="25" fill="#00355F"/>
+            <rect x="70" y="15" width="15" height="15" fill="#ffffff"/>
+            <rect x="73" y="18" width="9" height="9" fill="#00355F"/>
+            <rect x="10" y="65" width="25" height="25" fill="#00355F"/>
+            <rect x="15" y="70" width="15" height="15" fill="#ffffff"/>
+            <rect x="18" y="73" width="9" height="9" fill="#00355F"/>
+            <rect x="45" y="15" width="10" height="20" fill="#00355F"/>
+            <rect x="45" y="45" width="20" height="20" fill="#FFDA33"/>
+            <rect x="70" y="55" width="15" height="10" fill="#00355F"/>
+            <rect x="45" y="75" width="25" height="12" fill="#00355F"/>
+          </svg>
+          <div class="qr-text-info">
+            <strong>Scan to install Dayrest Harare App</strong>
+            <span>Available on iOS & Android • 4.8★ Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-promo-banner-media">
+        <img src="assets/images/expedia-app-banner.jpg" alt="Dayrest Travel Lifestyle in Zimbabwe" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-nav-grid">
+        <div>
+          <h4 class="footer-col-title">Top Destinations in Zimbabwe</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Harare Hotels & Lodges</a></li>
+            <li><a href="#">Victoria Falls Safari Packages</a></li>
+            <li><a href="#">Bulawayo City Accommodations</a></li>
+            <li><a href="#">Hwange National Park Safari</a></li>
+            <li><a href="#">Nyanga & Eastern Highlands</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Hotel Partners & Extranet</h4>
+          <ul class="footer-links-list">
+            <li><a href="extranet.html" style="color: #0A58CA; font-weight: 700;">Dayrest Partner Central (Extranet)</a></li>
+            <li><a href="extranet.html#supplies">Hotel Supplies Procurement Extranet</a></li>
+            <li><a href="extranet.html#onboard">List a Property in Harare</a></li>
+            <li><a href="extranet.html#inventory">Rate & Inventory Management</a></li>
+            <li><a href="#">Expedia Travel Partner Network</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Help & Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Change or Cancel Booking</a></li>
+            <li><a href="#">Refund Policies & Timelines</a></li>
+            <li><a href="#">Travel Advisory for Zimbabwe</a></li>
+            <li><a href="#">One Key Rewards Helpdesk</a></li>
+            <li><a href="#">Customer Security & Safety</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">About Dayrest Harare</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">About Dayrest Group</a></li>
+            <li><a href="#">Careers & Culture</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy and Cookie Notice</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-legal-text">
+          © 2026 Dayrest Harare, an Expedia-style technology company. All rights reserved. Prices include applicable taxes and service fees.
+        </p>
+        <div style="display: flex; gap: 1rem; font-size: 0.78rem;">
+          <a href="extranet.html">Partner Extranet</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       NATIVE DIALOG MODAL 1: ROOM SELECTION & HOTEL DETAILS
+       ========================================================================= -->
+  <dialog id="hotel-rooms-modal" aria-labelledby="rooms-modal-hotel-title">
+    <div class="modal-header">
+      <h3 class="modal-title" id="rooms-modal-hotel-title">Hotel Details & Available Rooms</h3>
+      <button class="btn-close-modal" aria-label="Close dialog">✕</button>
+    </div>
+    <div class="modal-body" id="rooms-modal-body">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       NATIVE DIALOG MODAL 2: 3-STEP CHECKOUT & INSTANT VOUCHER
+       ========================================================================= -->
+  <dialog id="checkout-modal" aria-labelledby="checkout-modal-title">
+    <div class="modal-header">
+      <h3 class="modal-title" id="checkout-modal-title">Complete Your Reservation</h3>
+      <button class="btn-close-modal" aria-label="Close checkout">✕</button>
+    </div>
+    <div class="modal-body" id="checkout-modal-body">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

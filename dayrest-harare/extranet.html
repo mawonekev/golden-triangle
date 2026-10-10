@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayrest Harare Partner Central | Hotel Extranet & Supplies Procurement</title>
+  <meta name="description" content="Dayrest Harare B2B Partner Central Extranet for hotel suppliers, property managers, inventory distribution, room rate updates, and hotel supplies procurement in Harare, Zimbabwe.">
+  <link rel="stylesheet" href="extranet.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       EXTRANET TOP HEADER
+       ========================================================================= -->
+  <header class="extranet-header">
+    <div class="extranet-header-inner">
+      <div class="extranet-brand">
+        <div class="extranet-brand-icon">D</div>
+        <div>
+          <h1 class="extranet-brand-title">Dayrest<span>Harare</span> Partner Central</h1>
+          <span class="extranet-brand-sub">Hotel Extranet & Supplies Procurement Portal</span>
+        </div>
+      </div>
+
+      <div class="extranet-top-controls">
+        <!-- Managed Property Selector -->
+        <div class="property-selector-box">
+          <label for="extranet-property-select">Property:</label>
+          <select id="extranet-property-select" class="property-select">
+            <option value="all">Loading managed hotels...</option>
+          </select>
+        </div>
+
+        <!-- Live Sync Status -->
+        <div class="sync-badge">
+          <span class="sync-pulse"></span>
+          <span>Live Synced with Customer Site</span>
+        </div>
+
+        <!-- Link back to consumer website -->
+        <a href="index.html" class="btn-view-consumer-site">
+          <span>View Consumer Site</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       TAB NAVIGATION
+       ========================================================================= -->
+  <nav class="extranet-nav-bar" aria-label="Partner extranet navigation">
+    <div class="extranet-nav-inner">
+      <button class="extranet-tab-btn active" data-tab="dashboard">
+        <span>📊 Dashboard & Bookings</span>
+        <span class="tab-badge">Live</span>
+      </button>
+      <button class="extranet-tab-btn" data-tab="inventory">
+        <span>🛏️ Rooms & Rates</span>
+        <span class="tab-badge">15 Hotels</span>
+      </button>
+      <button class="extranet-tab-btn" data-tab="supplies">
+        <span>📦 Supplies Extranet</span>
+        <span class="tab-badge">7 Categories</span>
+      </button>
+      <button class="extranet-tab-btn" data-tab="onboard">
+        <span>🏨 Add New Harare Property</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       MAIN BODY WRAPPER
+       ========================================================================= -->
+  <main class="extranet-container">
+
+    <!-- =======================================================================
+         TAB SECTION 1: DASHBOARD & RECENT BOOKINGS
+         ======================================================================= -->
+    <section class="tab-section active" id="tab-section-dashboard">
+      
+      <!-- KPI Metrics Grid -->
+      <div class="kpi-cards-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">30-Day Gross Revenue</span>
+          <div class="kpi-value" id="kpi-revenue">£18,450</div>
+          <span class="kpi-trend positive">▲ +14.2% vs last month</span>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">Average Occupancy Rate</span>
+          <div class="kpi-value" id="kpi-occupancy">84.6%</div>
+          <span class="kpi-trend positive">▲ High Harare season</span>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">Active Reservations</span>
+          <div class="kpi-value" id="kpi-bookings">14</div>
+          <span class="kpi-trend positive">● Real-time consumer feed</span>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">Average Daily Rate (ADR)</span>
+          <div class="kpi-value" id="kpi-adr">£115</div>
+          <span class="kpi-trend positive">▲ Competitive market rate</span>
+        </div>
+      </div>
+
+      <!-- Live Recent Bookings Table -->
+      <div class="table-panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Live Guest Reservations</h2>
+            <p style="font-size: 0.8rem; color: #64748B;">
+              Bookings made on the consumer website are automatically reflected in real-time.
+            </p>
+          </div>
+          <div class="panel-actions">
+            <span style="font-size: 0.8rem; color: #0E7036; font-weight: 700;">● Auto-updating</span>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="b2b-table">
+            <thead>
+              <tr>
+                <th>Booking Ref</th>
+                <th>Guest</th>
+                <th>Hotel & Room</th>
+                <th>Dates & Duration</th>
+                <th>Total Value</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="recent-bookings-tbody">
+              <!-- Populated dynamically by extranet.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =======================================================================
+         TAB SECTION 2: ROOMS & NIGHTLY RATES INVENTORY
+         ======================================================================= -->
+    <section class="tab-section" id="tab-section-inventory">
+      <div class="table-panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Room Rates & Availability Management</h2>
+            <p style="font-size: 0.8rem; color: #64748B;">
+              Adjust prices and availability below. Any modifications are instantly reflected on the Dayrest Harare consumer booking site.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="b2b-table">
+            <thead>
+              <tr>
+                <th>Harare Property</th>
+                <th>Room Type & Bed</th>
+                <th>Nightly Rate (GBP)</th>
+                <th>Allotted Inventory</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="inventory-tbody">
+              <!-- Populated dynamically by extranet.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TAB SECTION 3: HOTEL SUPPLIES PROCUREMENT EXTRANET
+         ======================================================================= -->
+    <section class="tab-section" id="tab-section-supplies">
+      <div class="table-panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Hotel Supplies & Procurement Inventory</h2>
+            <p style="font-size: 0.8rem; color: #64748B;">
+              Centralized Harare hospitality supply chain: linens, eco-toiletries, smart keycards, beverage stock & housekeeping materials.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="b2b-table">
+            <thead>
+              <tr>
+                <th>SKU & Category</th>
+                <th>Item Specification</th>
+                <th>Primary Supplier</th>
+                <th>Current Stock</th>
+                <th>Unit Price</th>
+                <th>Stock Status</th>
+                <th>Allocated Properties</th>
+                <th>Procure</th>
+              </tr>
+            </thead>
+            <tbody id="supplies-tbody">
+              <!-- Populated dynamically by extranet.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TAB SECTION 4: ONBOARD NEW HARARE PROPERTY
+         ======================================================================= -->
+    <section class="tab-section" id="tab-section-onboard">
+      <div class="form-card">
+        <div style="margin-bottom: 1.5rem; border-bottom: 1px solid #E2E8F0; padding-bottom: 1rem;">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: #0B192C;">List a New Harare Hotel or Lodge</h2>
+          <p style="font-size: 0.88rem; color: #64748B;">
+            Publish new inventory directly to the Dayrest Harare marketplace. Your property will immediately be bookable by global guests.
+          </p>
+        </div>
+
+        <form id="onboard-hotel-form">
+          <div class="form-grid-2col">
+            <div class="b2b-form-group">
+              <label class="b2b-label">Property Name *</label>
+              <input type="text" id="prop-name" class="b2b-input" placeholder="e.g. Borrowdale Brooke Luxury Villas" required>
+            </div>
+
+            <div class="b2b-form-group">
+              <label class="b2b-label">Star Rating *</label>
+              <select id="prop-stars" class="b2b-select" required>
+                <option value="5">5 Stars (Luxury)</option>
+                <option value="4" selected>4 Stars (Upscale)</option>
+                <option value="3">3 Stars (Comfort)</option>
+              </select>
+            </div>
+
+            <div class="b2b-form-group">
+              <label class="b2b-label">Harare Neighborhood *</label>
+              <select id="prop-neighborhood" class="b2b-select" required>
+                <option value="Borrowdale">Borrowdale</option>
+                <option value="Harare CBD">Harare CBD</option>
+                <option value="Newlands">Newlands</option>
+                <option value="Highlands">Highlands</option>
+                <option value="Avondale">Avondale</option>
+                <option value="Greendale">Greendale</option>
+                <option value="The Avenues">The Avenues</option>
+              </select>
+            </div>
+
+            <div class="b2b-form-group">
+              <label class="b2b-label">Nightly Rate (GBP) *</label>
+              <input type="number" id="prop-price-gbp" class="b2b-input" placeholder="110" min="40" max="1000" required>
+            </div>
+
+            <div class="b2b-form-group full">
+              <label class="b2b-label">Physical Address in Harare *</label>
+              <input type="text" id="prop-address" class="b2b-input" placeholder="e.g. 15 Crowhill Road, Borrowdale, Harare, Zimbabwe" required>
+            </div>
+
+            <div class="b2b-form-group">
+              <label class="b2b-label">General Manager / Contact Person *</label>
+              <input type="text" id="prop-manager" class="b2b-input" placeholder="e.g. Rumbidzai Chitando" required>
+            </div>
+
+            <div class="b2b-form-group">
+              <label class="b2b-label">Contact Phone *</label>
+              <input type="tel" id="prop-phone" class="b2b-input" placeholder="+263 242 880000" required>
+            </div>
+
+            <div class="b2b-form-group full">
+              <label class="b2b-label">Reservations Email *</label>
+              <input type="email" id="prop-email" class="b2b-input" placeholder="reservations@property.co.zw" required>
+            </div>
+
+            <div class="b2b-form-group full">
+              <label class="b2b-label">Property Description & Highlights *</label>
+              <textarea id="prop-desc" class="b2b-textarea" rows="3" placeholder="Provide guest overview, botanical gardens, swimming pool, dining and solar backup facilities..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-b2b-submit">Publish Property to Dayrest Harare Marketplace</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       REORDER SUPPLIES MODAL
+       ========================================================================= -->
+  <dialog id="reorder-supplies-modal" class="extranet-modal">
+    <div class="extranet-modal-header">
+      <h3 style="font-size: 1.15rem; font-weight: 800;">Order Hotel Supplies Replenishment</h3>
+      <button class="btn-close-reorder" style="color: #FFFFFF; font-size: 1.25rem;">✕</button>
+    </div>
+    <div class="extranet-modal-body">
+      <form id="reorder-supplies-form">
+        <input type="hidden" id="reorder-item-id">
+
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 1rem; border-radius: 8px; margin-bottom: 1.25rem;">
+          <h4 id="reorder-item-name" style="color: #0B192C; font-size: 1rem; font-weight: 800;">Item Name</h4>
+          <p style="font-size: 0.82rem; color: #64748B; margin-top: 0.25rem;">Supplier: <strong id="reorder-supplier-name">Supplier</strong> • Price: <strong id="reorder-unit-price">£0</strong></p>
+        </div>
+
+        <div class="form-grid-2col">
+          <div class="b2b-form-group">
+            <label class="b2b-label">Replenishment Quantity *</label>
+            <input type="number" id="reorder-qty" class="b2b-input" value="50" min="5" max="1000" required>
+          </div>
+
+          <div class="b2b-form-group">
+            <label class="b2b-label">Destination Property *</label>
+            <select id="reorder-hotel-target" class="b2b-select">
+              <option value="Central Harare Warehouse">Central Harare Warehouse (All Hotels)</option>
+              <option value="Hyatt Regency Harare The Meikles">Hyatt Regency Harare The Meikles</option>
+              <option value="Monomotapa Hotel">Monomotapa Hotel</option>
+              <option value="Rainbow Towers Hotel">Rainbow Towers Hotel</option>
+              <option value="Amanzi Lodge">Amanzi Lodge</option>
+              <option value="The Bronte Hotel">The Bronte Hotel</option>
+            </select>
+          </div>
+
+          <div class="b2b-form-group">
+            <label class="b2b-label">Target Delivery Date *</label>
+            <input type="date" class="b2b-input" value="2026-10-14" required>
+          </div>
+
+          <div class="b2b-form-group">
+            <label class="b2b-label">Delivery Priority</label>
+            <select class="b2b-select">
+              <option value="express">Express Courier (48 Hours)</option>
+              <option value="standard" selected>Standard Logistics (3-5 Days)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 1rem;">
+          <button type="button" class="btn-action-sm btn-action-outline btn-close-reorder">Cancel</button>
+          <button type="submit" class="btn-action-sm btn-action-reorder" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Submit Purchase Order</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Floating Toast Notification -->
+  <div class="extranet-toast" id="extranet-toast">
+    <span style="font-size: 1.25rem;">✓</span>
+    <span id="toast-message">Action confirmed</span>
+  </div>
+
+  <script src="extranet.js"></script>
+</body>
+</html>

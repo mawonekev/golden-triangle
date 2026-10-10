@@ -1,0 +1,842 @@
+[
+  {
+    "id": "harare-hyatt-meikles",
+    "name": "Hyatt Regency Harare The Meikles",
+    "starRating": 5,
+    "reviewScore": 9.2,
+    "reviewLabel": "Superb",
+    "reviewCount": 542,
+    "neighborhood": "Harare CBD",
+    "address": "Jason Moyo Avenue, Harare, Zimbabwe",
+    "distanceCityCentre": "0.1 km from city centre",
+    "priceGBP": 145,
+    "priceUSD": 185,
+    "priceEUR": 170,
+    "priceZAR": 3400,
+    "taxesAndFeesGBP": 22,
+    "image": "assets/images/hyatt-meikles.jpg",
+    "badge": "VIP Access",
+    "badgeClass": "vip",
+    "cancellationPolicy": "Fully refundable before 9 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Spa", "Airport shuttle", "Gym", "Restaurant", "Bar", "Air conditioning", "Room service"],
+    "highlights": [
+      "Overlooking historic Africa Unity Square",
+      "Heated rooftop swimming pool & cocktail bar",
+      "Luxury marble bathrooms with deep soaking tubs",
+      "Award-winning La Fontaine Grill Room"
+    ],
+    "description": "Hyatt Regency Harare The Meikles stands as Zimbabwe's most iconic luxury landmark, welcoming distinguished travellers since 1915. Located in the heart of Harare overlooking Africa Unity Square, this five-star haven combines timeless gracious hospitality with modern international luxury, an expansive rooftop heated pool, the full-service Imperial Spa, and world-class fine dining.",
+    "supplier": {
+      "id": "SUP-HYATT-001",
+      "managerName": "Tinashe Makoni",
+      "email": "reservations@hyattmeikles.co.zw",
+      "phone": "+263 242 707721",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-meikles-deluxe",
+        "name": "Deluxe King Park View",
+        "bed": "1 Extra-Large King Bed",
+        "size": "42 m²",
+        "priceGBP": 145,
+        "available": 8,
+        "features": ["Park view", "Free high-speed WiFi", "Deep soaking tub", "Air conditioning", "Smart LED TV"]
+      },
+      {
+        "id": "rm-meikles-exec",
+        "name": "Club Regency Executive Suite",
+        "bed": "1 King Bed + Living Lounge",
+        "size": "65 m²",
+        "priceGBP": 210,
+        "available": 4,
+        "features": ["Executive Club Lounge Access", "Complimentary Evening Canapés", "Panoramic Skyline Balcony", "Nespresso Machine"]
+      },
+      {
+        "id": "rm-meikles-presidential",
+        "name": "Imperial Presidential Suite",
+        "bed": "2 King Bedrooms + Dining Room",
+        "size": "130 m²",
+        "priceGBP": 450,
+        "available": 1,
+        "features": ["Private 24h Butler Service", "Private Kitchen & Boardroom", "Jacuzzi Spa Bath", "VIP Chauffeur Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "id": "harare-monomotapa",
+    "name": "Monomotapa Hotel",
+    "starRating": 4,
+    "reviewScore": 8.0,
+    "reviewLabel": "Very Good",
+    "reviewCount": 384,
+    "neighborhood": "Harare CBD",
+    "address": "54 Park Lane, Harare, Zimbabwe",
+    "distanceCityCentre": "0.3 km from city centre",
+    "priceGBP": 110,
+    "priceUSD": 140,
+    "priceEUR": 130,
+    "priceZAR": 2580,
+    "taxesAndFeesGBP": 16,
+    "image": "assets/images/monomotapa.jpg",
+    "badge": "Member Price",
+    "badgeClass": "member",
+    "cancellationPolicy": "Free cancellation up to 24h before check-in",
+    "paymentPolicy": "Pay now or at property",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Gym", "Room service", "Conference centre"],
+    "highlights": [
+      "Famous curved architectural silhouette overlooking Harare Gardens",
+      "Outdoor swimming pool & sundeck",
+      "Walking distance to national galleries and shopping avenues",
+      "Parkview Brasserie and signature cocktail bar"
+    ],
+    "description": "Rising majestically over Harare Gardens with its distinctive concave architectural curve, Monomotapa Hotel is a prime destination for business and leisure travellers. Enjoy sunlit rooms with lush park views, poolside dining at the Aquarium Bar, and dependable comfort in the centre of Harare.",
+    "supplier": {
+      "id": "SUP-MONO-002",
+      "managerName": "Blessing Chidemo",
+      "email": "frontdesk@monomotapa.co.zw",
+      "phone": "+263 242 704501",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-mono-standard",
+        "name": "Standard Garden View Room",
+        "bed": "1 Queen Bed or 2 Singles",
+        "size": "32 m²",
+        "priceGBP": 110,
+        "available": 12,
+        "features": ["Harare Gardens View", "High-speed WiFi", "Air conditioning", "Work Desk", "Tea & Coffee station"]
+      },
+      {
+        "id": "rm-mono-exec",
+        "name": "Executive King Suite",
+        "bed": "1 King Bed",
+        "size": "50 m²",
+        "priceGBP": 165,
+        "available": 5,
+        "features": ["Separate sitting lounge", "Bathrobes & Slippers", "Mini Bar", "Complimentary Breakfast"]
+      }
+    ]
+  },
+  {
+    "id": "harare-rainbow-towers",
+    "name": "Rainbow Towers Hotel & Conference Centre",
+    "starRating": 4.5,
+    "reviewScore": 8.3,
+    "reviewLabel": "Very Good",
+    "reviewCount": 618,
+    "neighborhood": "Harare CBD",
+    "address": "1 Pennefather Avenue, Harare, Zimbabwe",
+    "distanceCityCentre": "0.8 km from city centre",
+    "priceGBP": 125,
+    "priceUSD": 160,
+    "priceEUR": 148,
+    "priceZAR": 2940,
+    "taxesAndFeesGBP": 19,
+    "image": "assets/images/rainbow-towers.jpg",
+    "badge": "Top Rated 2026",
+    "badgeClass": "top",
+    "cancellationPolicy": "Fully refundable before 10 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Spa", "Airport shuttle", "Gym", "Restaurant", "Bar", "Tennis court", "Casino"],
+    "highlights": [
+      "Home to the Harare International Conference Centre (HICC)",
+      "Olympic-sized resort swimming pool & floodlit tennis courts",
+      "Full casino on-site with live gaming tables",
+      "Lush landscaped tropical private gardens"
+    ],
+    "description": "A prestigious international hub in Harare, Rainbow Towers offers resort-style amenities right at the doorstep of the central business district. Unwind beside the Olympic pool, savor international gourmet buffets at the Harvest Garden restaurant, or host world-class conventions at the interconnected HICC auditorium.",
+    "supplier": {
+      "id": "SUP-RTG-003",
+      "managerName": "Kudzai Moyo",
+      "email": "reservations@rainbowtowers.co.zw",
+      "phone": "+263 242 772633",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-rtg-deluxe",
+        "name": "Deluxe Garden Twin / Double",
+        "bed": "1 King or 2 Queen Beds",
+        "size": "36 m²",
+        "priceGBP": 125,
+        "available": 15,
+        "features": ["Garden & pool views", "En-suite marble bathroom", "Free WiFi", "Air conditioning", "Minibar"]
+      },
+      {
+        "id": "rm-rtg-towers",
+        "name": "Towers VIP Floor Suite",
+        "bed": "1 King Bed + Private Lounge",
+        "size": "58 m²",
+        "priceGBP": 195,
+        "available": 6,
+        "features": ["Private VIP floor express check-in", "Free airport luxury transfer", "Complimentary breakfast & cocktails"]
+      }
+    ]
+  },
+  {
+    "id": "harare-cresta-lodge",
+    "name": "Cresta Lodge Harare",
+    "starRating": 4,
+    "reviewScore": 8.5,
+    "reviewLabel": "Very Good",
+    "reviewCount": 412,
+    "neighborhood": "Greendale",
+    "address": "Samora Machel Avenue East, Harare, Zimbabwe",
+    "distanceCityCentre": "4.5 km from city centre",
+    "priceGBP": 98,
+    "priceUSD": 125,
+    "priceEUR": 115,
+    "priceZAR": 2300,
+    "taxesAndFeesGBP": 15,
+    "image": "assets/images/cresta-lodge.jpg",
+    "badge": "Great Deal",
+    "badgeClass": "deal",
+    "cancellationPolicy": "Free cancellation up to 48 hours",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Gym", "Free parking", "Business centre"],
+    "highlights": [
+      "Set in tranquil landscaped indigenous gardens",
+      "Chatters Restaurant serving authentic Southern African & international cuisine",
+      "Modern outdoor swimming pool with poolside bar",
+      "Quiet residential suburb atmosphere"
+    ],
+    "description": "Nestled among tranquil Greendale gardens along Samora Machel Avenue, Cresta Lodge provides an idyllic retreat just minutes from Harare's bustling centre. Renowned for its comfortable, modern guest rooms, the popular Chatters Restaurant, and dedicated conference facilities, it is a favourite among regional and international guests.",
+    "supplier": {
+      "id": "SUP-CRESTA-004",
+      "managerName": "Farai Sibanda",
+      "email": "gm@crestalodge.co.zw",
+      "phone": "+263 242 487006",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-cresta-lodge-std",
+        "name": "Superior Garden King",
+        "bed": "1 King Bed",
+        "size": "30 m²",
+        "priceGBP": 98,
+        "available": 10,
+        "features": ["Garden terrace", "Free high-speed WiFi", "Satellite TV", "En-suite walk-in shower"]
+      },
+      {
+        "id": "rm-cresta-lodge-exec",
+        "name": "Executive Terrace Suite",
+        "bed": "1 King Bed + Patio",
+        "size": "45 m²",
+        "priceGBP": 140,
+        "available": 4,
+        "features": ["Private sun patio", "Living area", "Bathrobe and slippers", "Complimentary mini-bar snacks"]
+      }
+    ]
+  },
+  {
+    "id": "harare-bronte-hotel",
+    "name": "The Bronte Hotel",
+    "starRating": 4,
+    "reviewScore": 8.9,
+    "reviewLabel": "Wonderful",
+    "reviewCount": 590,
+    "neighborhood": "The Avenues",
+    "address": "132 Baines Avenue, Harare, Zimbabwe",
+    "distanceCityCentre": "1.2 km from city centre",
+    "priceGBP": 105,
+    "priceUSD": 135,
+    "priceEUR": 124,
+    "priceZAR": 2470,
+    "taxesAndFeesGBP": 16,
+    "image": "assets/images/bronte-hotel.jpg",
+    "badge": "Eco Certified",
+    "badgeClass": "eco",
+    "cancellationPolicy": "Fully refundable before 10 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Gym", "Free parking", "Garden"],
+    "highlights": [
+      "Historic colonial garden hotel in the serene Avenues district",
+      "Two sparkling outdoor swimming pools set among palm trees",
+      "Celebrated Emmanuel's Fine Dining Restaurant and Palms Veranda",
+      "Complimentary secure on-site parking and 24-hour security"
+    ],
+    "description": "A tranquil garden oasis located in The Avenues, The Bronte Hotel has been delivering genuine Zimbabwean warmth and colonial charm for generations. Guests enjoy shaded garden pathways, two swimming pools, tranquil verandas, and the culinary elegance of Emmanuel's Restaurant.",
+    "supplier": {
+      "id": "SUP-BRONTE-005",
+      "managerName": "Sarah Montgomery",
+      "email": "info@brontehotel.co.zw",
+      "phone": "+263 242 707522",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-bronte-deluxe",
+        "name": "Classic Garden Room",
+        "bed": "1 Queen Bed or 2 Twin Beds",
+        "size": "34 m²",
+        "priceGBP": 105,
+        "available": 9,
+        "features": ["Garden view veranda", "Tea & coffee maker", "Free fast WiFi", "Safety deposit box"]
+      },
+      {
+        "id": "rm-bronte-suite",
+        "name": "Veranda Palm Suite",
+        "bed": "1 King Bed + Lounge",
+        "size": "48 m²",
+        "priceGBP": 155,
+        "available": 3,
+        "features": ["Direct poolside garden access", "Separate lounge area", "Spacious en-suite bathroom", "Complimentary full breakfast"]
+      }
+    ]
+  },
+  {
+    "id": "harare-amanzi-lodge",
+    "name": "Amanzi Lodge",
+    "starRating": 5,
+    "reviewScore": 9.7,
+    "reviewLabel": "Exceptional",
+    "reviewCount": 215,
+    "neighborhood": "Borrowdale",
+    "address": "1 Enterprise Road, Kambanji, Harare, Zimbabwe",
+    "distanceCityCentre": "11.0 km from city centre",
+    "priceGBP": 240,
+    "priceUSD": 305,
+    "priceEUR": 282,
+    "priceZAR": 5640,
+    "taxesAndFeesGBP": 35,
+    "image": "assets/images/amanzi-lodge.jpg",
+    "badge": "VIP Access",
+    "badgeClass": "vip",
+    "cancellationPolicy": "Fully refundable before 8 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Spa", "Airport shuttle", "Gym", "Restaurant", "Bar", "Tennis court", "Free parking"],
+    "highlights": [
+      "Ultra-exclusive boutique sanctuary in pristine Borrowdale",
+      "Spectacular rock swimming pool with natural cascading waterfalls",
+      "Individually styled themed luxury African chalets",
+      "World-class Amanzi fine dining restaurant on premises"
+    ],
+    "description": "Ranked among the premier boutique hotels in Southern Africa, Amanzi Lodge is set within lush botanical gardens with cascading waterfalls, vibrant birdlife, and secluded luxury chalets. Each suite is individually designed representing African heritage with rare antiques, contemporary art, and five-star bespoke dining.",
+    "supplier": {
+      "id": "SUP-AMANZI-006",
+      "managerName": "Ezekiel Banda",
+      "email": "stay@amanzilodge.co.zw",
+      "phone": "+263 242 497768",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-amanzi-chalet",
+        "name": "The Zanzibar Luxury Thatched Chalet",
+        "bed": "1 Four-Poster King Bed",
+        "size": "55 m²",
+        "priceGBP": 240,
+        "available": 3,
+        "features": ["Waterfall garden view", "Private stone veranda", "Hand-carved four poster bed", "Indoor fireplace", "Luxury bath amenities"]
+      },
+      {
+        "id": "rm-amanzi-master",
+        "name": "The Grand Serengeti Villa",
+        "bed": "1 King Bed + Private Sun Deck",
+        "size": "85 m²",
+        "priceGBP": 380,
+        "available": 1,
+        "features": ["Private plunge pool access", "Private dining pavilion", "Butlers service", "Champagne breakfast included"]
+      }
+    ]
+  },
+  {
+    "id": "harare-cresta-oasis",
+    "name": "Cresta Oasis Hotel & Apartments",
+    "starRating": 3.5,
+    "reviewScore": 7.8,
+    "reviewLabel": "Good",
+    "reviewCount": 298,
+    "neighborhood": "Harare CBD",
+    "address": "124 Nelson Mandela Avenue, Harare, Zimbabwe",
+    "distanceCityCentre": "0.4 km from city centre",
+    "priceGBP": 82,
+    "priceUSD": 105,
+    "priceEUR": 96,
+    "priceZAR": 1920,
+    "taxesAndFeesGBP": 12,
+    "image": "assets/images/cresta-oasis.jpg",
+    "badge": "Great Deal",
+    "badgeClass": "deal",
+    "cancellationPolicy": "Free cancellation up to 24h",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Free parking", "Room service"],
+    "highlights": [
+      "Modern lifestyle hotel with spacious serviced apartments",
+      "Courtyard swimming pool and Café Oasis",
+      "Steps from financial houses, malls, and transit links",
+      "Kitchenette facilities in selected apartments"
+    ],
+    "description": "Cresta Oasis combines the convenience of central Harare accommodation with modern lifestyle comforts. Featuring contemporary guest rooms, executive self-catering apartments, an inviting swimming pool courtyard, and lively café dining, it provides superb value in downtown Harare.",
+    "supplier": {
+      "id": "SUP-OASIS-007",
+      "managerName": "Tariro Mupfumi",
+      "email": "oasis@cresta.co.zw",
+      "phone": "+263 242 790861",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-oasis-std",
+        "name": "Standard Studio Room",
+        "bed": "1 Queen Bed",
+        "size": "28 m²",
+        "priceGBP": 82,
+        "available": 14,
+        "features": ["Air conditioning", "Workstation", "Free WiFi", "Satellite TV", "En-suite bathroom"]
+      },
+      {
+        "id": "rm-oasis-apt",
+        "name": "One-Bedroom Serviced Apartment",
+        "bed": "1 King Bed + Kitchenette",
+        "size": "46 m²",
+        "priceGBP": 120,
+        "available": 6,
+        "features": ["Equipped kitchenette", "Dining table", "Living room", "Refrigerator & microwave"]
+      }
+    ]
+  },
+  {
+    "id": "harare-willowmead-guesthouse",
+    "name": "Willowmead Guest House",
+    "starRating": 4,
+    "reviewScore": 9.4,
+    "reviewLabel": "Superb",
+    "reviewCount": 185,
+    "neighborhood": "Borrowdale",
+    "address": "82 Willowmead Lane, Colne Valley, Harare, Zimbabwe",
+    "distanceCityCentre": "8.5 km from city centre",
+    "priceGBP": 115,
+    "priceUSD": 148,
+    "priceEUR": 135,
+    "priceZAR": 2700,
+    "taxesAndFeesGBP": 18,
+    "image": "assets/images/willowmead-guesthouse.jpg",
+    "badge": "Top Rated 2026",
+    "badgeClass": "top",
+    "cancellationPolicy": "Fully refundable before 9 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Free parking", "Airport shuttle", "Garden", "Room service"],
+    "highlights": [
+      "Serene private estate nestled in Colne Valley, Borrowdale",
+      "Manicured English rose gardens and swimming pool",
+      "Delicious farm-fresh home-cooked gourmet breakfasts",
+      "Close to Sam Levy's Village shopping and dining precinct"
+    ],
+    "description": "Escape to the peaceful tranquility of Willowmead Guest House in Borrowdale. Set amidst sprawling green lawns and rose gardens, this boutique guest residence offers personalised hospitality, solar-powered continuous energy, sparkling pool views, and freshly prepared gourmet cuisine.",
+    "supplier": {
+      "id": "SUP-WILLOW-008",
+      "managerName": "Angela Harrison",
+      "email": "bookings@willowmeadguesthouse.co.zw",
+      "phone": "+263 242 882041",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-willow-rose",
+        "name": "Rose Cottage Garden Suite",
+        "bed": "1 King Bed",
+        "size": "38 m²",
+        "priceGBP": 115,
+        "available": 4,
+        "features": ["Garden terrace", "Full English breakfast", "High-speed WiFi", "Tea & French press coffee"]
+      },
+      {
+        "id": "rm-willow-pool",
+        "name": "Poolside Luxury Suite",
+        "bed": "1 King Bed + Lounge",
+        "size": "48 m²",
+        "priceGBP": 145,
+        "available": 2,
+        "features": ["Direct pool access", "Deep oval soaking tub", "Minibar", "Garden patio seating"]
+      }
+    ]
+  },
+  {
+    "id": "harare-armadale-lodge",
+    "name": "Armadale Lodge",
+    "starRating": 4.5,
+    "reviewScore": 9.3,
+    "reviewLabel": "Superb",
+    "reviewCount": 152,
+    "neighborhood": "Borrowdale",
+    "address": "9 Armadale Road, Borrowdale, Harare, Zimbabwe",
+    "distanceCityCentre": "9.2 km from city centre",
+    "priceGBP": 135,
+    "priceUSD": 172,
+    "priceEUR": 158,
+    "priceZAR": 3170,
+    "taxesAndFeesGBP": 20,
+    "image": "assets/images/armadale-lodge.jpg",
+    "badge": "VIP Access",
+    "badgeClass": "vip",
+    "cancellationPolicy": "Fully refundable before 9 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Free parking", "Airport shuttle", "Spa"],
+    "highlights": [
+      "Historic homestead set in 2.5 acres of landscaped indigenous gardens",
+      "Outdoor swimming pool and charming garden dining veranda",
+      "Farm-to-table cuisine prepared with fresh local produce",
+      "Minutes from Borrowdale Brooke Golf Club"
+    ],
+    "description": "A charming country-style estate in Borrowdale, Armadale Lodge brings historic Zimbabwean heritage to life with luxurious touches. Enjoy bespoke suites, tranquil water features, birdsong throughout the acres of greenery, and personalised service that makes every stay unforgettable.",
+    "supplier": {
+      "id": "SUP-ARMA-009",
+      "managerName": "Douglas Armstrong",
+      "email": "stay@armadalelodge.co.zw",
+      "phone": "+263 242 860124",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-arma-garden",
+        "name": "Homestead Garden Room",
+        "bed": "1 King Bed or 2 Twins",
+        "size": "36 m²",
+        "priceGBP": 135,
+        "available": 5,
+        "features": ["Private patio", "Fireplace", "Organic toiletries", "Complimentary gourmet breakfast"]
+      },
+      {
+        "id": "rm-arma-suite",
+        "name": "Armadale Executive Villa Suite",
+        "bed": "1 King Bed + Lounge",
+        "size": "56 m²",
+        "priceGBP": 185,
+        "available": 2,
+        "features": ["Spacious garden views", "Freestanding claw-foot tub", "Private outdoor dining area", "Espresso machine"]
+      }
+    ]
+  },
+  {
+    "id": "harare-highlands-lodges",
+    "name": "Highlands Lodges & Apartments",
+    "starRating": 4,
+    "reviewScore": 8.7,
+    "reviewLabel": "Excellent",
+    "reviewCount": 168,
+    "neighborhood": "Highlands",
+    "address": "63 Enterprise Road, Highlands, Harare, Zimbabwe",
+    "distanceCityCentre": "5.5 km from city centre",
+    "priceGBP": 92,
+    "priceUSD": 118,
+    "priceEUR": 108,
+    "priceZAR": 2160,
+    "taxesAndFeesGBP": 14,
+    "image": "assets/images/highlands-lodges.jpg",
+    "badge": "Great Deal",
+    "badgeClass": "deal",
+    "cancellationPolicy": "Free cancellation up to 48 hours",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Free parking", "Kitchenette", "Garden", "Air conditioning"],
+    "highlights": [
+      "Peaceful residential retreat in prestigious Highlands",
+      "Swimming pool with sun loungers and barbecue patio",
+      "Fully equipped kitchenettes ideal for long-stay executives",
+      "Solar inverter and borehole backup water guaranteed"
+    ],
+    "description": "Located in upscale Highlands along Enterprise Road, Highlands Lodges & Apartments offers the comforts of home combined with hotel luxury. Enjoy modern studio rooms and one-to-two bedroom apartments with garden views, a sparkling pool, fast Wi-Fi, and 24-hour security.",
+    "supplier": {
+      "id": "SUP-HIGH-010",
+      "managerName": "Tendai Nyathi",
+      "email": "info@highlandslodges.co.zw",
+      "phone": "+263 242 776510",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-high-studio",
+        "name": "Deluxe Studio with Kitchenette",
+        "bed": "1 King Bed",
+        "size": "35 m²",
+        "priceGBP": 92,
+        "available": 8,
+        "features": ["Kitchenette with microwave", "Free high-speed WiFi", "Air conditioning", "Satellite TV"]
+      },
+      {
+        "id": "rm-high-2bed",
+        "name": "Two-Bedroom Family Residence",
+        "bed": "2 King Beds + Living Room",
+        "size": "70 m²",
+        "priceGBP": 150,
+        "available": 3,
+        "features": ["Full kitchen", "Private patio", "Two en-suite bathrooms", "Dining table for 6"]
+      }
+    ]
+  },
+  {
+    "id": "harare-york-lodge",
+    "name": "York Lodge",
+    "starRating": 4.5,
+    "reviewScore": 9.3,
+    "reviewLabel": "Superb",
+    "reviewCount": 234,
+    "neighborhood": "Newlands",
+    "address": "1 York Avenue, Newlands, Harare, Zimbabwe",
+    "distanceCityCentre": "3.8 km from city centre",
+    "priceGBP": 130,
+    "priceUSD": 166,
+    "priceEUR": 152,
+    "priceZAR": 3050,
+    "taxesAndFeesGBP": 19,
+    "image": "assets/images/york-lodge.jpg",
+    "badge": "Top Rated 2026",
+    "badgeClass": "top",
+    "cancellationPolicy": "Fully refundable before 9 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Restaurant", "Bar", "Gym", "Free parking", "Garden"],
+    "highlights": [
+      "Set in 4 acres of lush, bird-rich gardens in Newlands",
+      "Charming dining veranda overlooking the pool and gardens",
+      "Fitness gym, tennis court, and full English breakfast buffet",
+      "Minutes from Newlands Shopping Centre and popular bistros"
+    ],
+    "description": "York Lodge is celebrated as one of Harare's top boutique garden lodges. Set in Newlands, guests enjoy a relaxing atmosphere, superb dining on the broad veranda, an inviting swimming pool, private fitness studio, and impeccably maintained gardens.",
+    "supplier": {
+      "id": "SUP-YORK-011",
+      "managerName": "Patrick O'Connor",
+      "email": "stay@yorklodge.co.zw",
+      "phone": "+263 242 776150",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-york-standard",
+        "name": "Garden Veranda Double",
+        "bed": "1 King Bed or 2 Twins",
+        "size": "34 m²",
+        "priceGBP": 130,
+        "available": 6,
+        "features": ["Garden veranda view", "Air conditioning", "Full breakfast included", "Mini fridge", "Tea/coffee station"]
+      },
+      {
+        "id": "rm-york-cottage",
+        "name": "Private Garden Cottage Suite",
+        "bed": "1 King Bed + Sitting Area",
+        "size": "52 m²",
+        "priceGBP": 175,
+        "available": 2,
+        "features": ["Secluded cottage setting", "Private garden patio", "Deep soaking bath", "Robes & luxury toiletries"]
+      }
+    ]
+  },
+  {
+    "id": "harare-new-ambassador",
+    "name": "New Ambassador Hotel",
+    "starRating": 3,
+    "reviewScore": 7.4,
+    "reviewLabel": "Good",
+    "reviewCount": 198,
+    "neighborhood": "Harare CBD",
+    "address": "88 Kwame Nkrumah Avenue, Harare, Zimbabwe",
+    "distanceCityCentre": "0.2 km from city centre",
+    "priceGBP": 68,
+    "priceUSD": 88,
+    "priceEUR": 80,
+    "priceZAR": 1600,
+    "taxesAndFeesGBP": 10,
+    "image": "assets/images/new-ambassador.jpg",
+    "badge": "Great Deal",
+    "badgeClass": "deal",
+    "cancellationPolicy": "Free cancellation up to 24h",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Free WiFi", "Breakfast included", "Restaurant", "Bar", "Room service", "Conference centre"],
+    "highlights": [
+      "Ultra-convenient commercial location on Kwame Nkrumah Ave",
+      "The famous Quill Bar - historic Harare meeting spot",
+      "Full conference and meeting room facilities",
+      "Affordable business travel rates"
+    ],
+    "description": "Strategically positioned in the heart of Harare's commercial core, the New Ambassador Hotel provides budget-conscious business and leisure guests with immediate access to ministries, embassies, banks, and corporate headquarters.",
+    "supplier": {
+      "id": "SUP-AMB-012",
+      "managerName": "Tonderai Gonese",
+      "email": "ambassador@rtg.co.zw",
+      "phone": "+263 242 705811",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-amb-std",
+        "name": "Standard Business Double",
+        "bed": "1 Double Bed",
+        "size": "24 m²",
+        "priceGBP": 68,
+        "available": 16,
+        "features": ["Central city view", "Free WiFi", "Work desk", "En-suite bathroom", "Television"]
+      },
+      {
+        "id": "rm-amb-exec",
+        "name": "Executive Double Room",
+        "bed": "1 King Bed",
+        "size": "32 m²",
+        "priceGBP": 95,
+        "available": 5,
+        "features": ["Air conditioning", "Complimentary full breakfast", "Mini fridge", "Coffee making facilities"]
+      }
+    ]
+  },
+  {
+    "id": "harare-holiday-inn",
+    "name": "Holiday Inn Harare",
+    "starRating": 4,
+    "reviewScore": 8.3,
+    "reviewLabel": "Very Good",
+    "reviewCount": 456,
+    "neighborhood": "Harare CBD",
+    "address": "Corner Samora Machel Avenue & Fifth Street, Harare, Zimbabwe",
+    "distanceCityCentre": "0.5 km from city centre",
+    "priceGBP": 118,
+    "priceUSD": 150,
+    "priceEUR": 138,
+    "priceZAR": 2770,
+    "taxesAndFeesGBP": 18,
+    "image": "assets/images/holiday-inn-harare.jpg",
+    "badge": "Member Price",
+    "badgeClass": "member",
+    "cancellationPolicy": "Fully refundable before 9 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Gym", "Restaurant", "Bar", "Free parking", "Room service"],
+    "highlights": [
+      "Rooftop swimming pool with panoramic Harare skyline views",
+      "Vumba Restaurant serving buffet and à la carte specialties",
+      "24-hour business centre and fitness suite",
+      "Underground secure parking and IHG quality guarantee"
+    ],
+    "description": "Holiday Inn Harare offers dependable international four-star hospitality along Samora Machel Avenue. Business and leisure guests enjoy rooftop poolside relaxation with sweeping views across Harare, modern guest rooms, and attentive service.",
+    "supplier": {
+      "id": "SUP-HI-013",
+      "managerName": "Nyasha Mutasa",
+      "email": "reservations@hiharare.co.zw",
+      "phone": "+263 242 251200",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-hi-std",
+        "name": "Standard King Room",
+        "bed": "1 King Bed",
+        "size": "30 m²",
+        "priceGBP": 118,
+        "available": 11,
+        "features": ["City skyline view", "Free high-speed WiFi", "Ergonomic work desk", "En-suite walk-in shower"]
+      },
+      {
+        "id": "rm-hi-exec",
+        "name": "Executive Club Suite",
+        "bed": "1 King Bed + Lounge",
+        "size": "48 m²",
+        "priceGBP": 165,
+        "available": 4,
+        "features": ["High floor skyline view", "Lounge area", "Espresso machine", "Complimentary buffet breakfast"]
+      }
+    ]
+  },
+  {
+    "id": "harare-simboti-lodge",
+    "name": "Simboti Lodge",
+    "starRating": 3.5,
+    "reviewScore": 8.5,
+    "reviewLabel": "Very Good",
+    "reviewCount": 114,
+    "neighborhood": "Avondale",
+    "address": "14 Connaught Road, Avondale, Harare, Zimbabwe",
+    "distanceCityCentre": "3.2 km from city centre",
+    "priceGBP": 75,
+    "priceUSD": 96,
+    "priceEUR": 88,
+    "priceZAR": 1760,
+    "taxesAndFeesGBP": 11,
+    "image": "assets/images/simboti-lodge.jpg",
+    "badge": "Great Deal",
+    "badgeClass": "deal",
+    "cancellationPolicy": "Free cancellation up to 48 hours",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Free parking", "Bar", "Garden", "Airport shuttle"],
+    "highlights": [
+      "Cozy residential lodge in historic, leafy Avondale",
+      "Sparkling swimming pool and sun terrace",
+      "Walkable to Avondale Flea Market and boutique cafes",
+      "Intimate, home-style hospitality"
+    ],
+    "description": "Simboti Lodge offers a welcoming home-away-from-home in the historic residential suburb of Avondale. Guests appreciate the quiet garden setting, swimming pool, cozy bar, and friendly personalised Zimbabwean hospitality.",
+    "supplier": {
+      "id": "SUP-SIM-014",
+      "managerName": "Memory Chikwanha",
+      "email": "stay@simbotilodge.co.zw",
+      "phone": "+263 242 335091",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-sim-garden",
+        "name": "Garden Cottage Double",
+        "bed": "1 Queen Bed",
+        "size": "26 m²",
+        "priceGBP": 75,
+        "available": 6,
+        "features": ["Pool & garden view", "Free WiFi", "Tea & coffee maker", "En-suite shower", "Cooked breakfast included"]
+      }
+    ]
+  },
+  {
+    "id": "harare-meikles-club-pavilion",
+    "name": "Meikles Hotel - Club Suite Pavilion",
+    "starRating": 5,
+    "reviewScore": 9.6,
+    "reviewLabel": "Exceptional",
+    "reviewCount": 312,
+    "neighborhood": "Harare CBD",
+    "address": "Jason Moyo Avenue (South Wing VIP Pavilion), Harare, Zimbabwe",
+    "distanceCityCentre": "0.1 km from city centre",
+    "priceGBP": 210,
+    "priceUSD": 268,
+    "priceEUR": 246,
+    "priceZAR": 4930,
+    "taxesAndFeesGBP": 30,
+    "image": "assets/images/meikles-pavilion.jpg",
+    "badge": "VIP Access",
+    "badgeClass": "vip",
+    "cancellationPolicy": "Fully refundable before 8 Oct",
+    "paymentPolicy": "Reserve now, pay at stay",
+    "amenities": ["Pool", "Free WiFi", "Breakfast included", "Spa", "Airport shuttle", "Gym", "Restaurant", "Bar", "Air conditioning", "Room service"],
+    "highlights": [
+      "Ultra-luxury dedicated Club Pavilion Wing with private elevator",
+      "Dedicated 24-hour butler and private concierge lounge",
+      "Complimentary champagne breakfast and sunset hors d'oeuvres",
+      "Italian marble en-suite bathrooms with Jacuzzi spa tubs"
+    ],
+    "description": "The crowning jewel of luxury hospitality in Harare, the Meikles Club Suite Pavilion represents the absolute pinnacle of presidential elegance. Guests enjoy private VIP express check-in, exclusive Club Lounge privileges, 24-hour dedicated butler service, and uncompromised privacy in Harare's city centre.",
+    "supplier": {
+      "id": "SUP-MEIKLES-015",
+      "managerName": "Tinashe Makoni",
+      "email": "clubpavilion@hyattmeikles.co.zw",
+      "phone": "+263 242 707725",
+      "contractStatus": "Active"
+    },
+    "rooms": [
+      {
+        "id": "rm-pavilion-grand",
+        "name": "Royal Club Pavilion Suite",
+        "bed": "1 Super King Bed + Living Room",
+        "size": "72 m²",
+        "priceGBP": 210,
+        "available": 3,
+        "features": ["Panoramic city skyline", "Private butler service", "Club lounge privileges", "Complimentary champagne & fruit basket", "Jacuzzi spa tub"]
+      },
+      {
+        "id": "rm-pavilion-diplomat",
+        "name": "Diplomatic Royal Penthouse",
+        "bed": "2 Super King Bedrooms + Private Terrace",
+        "size": "145 m²",
+        "priceGBP": 520,
+        "available": 1,
+        "features": ["Private 360-degree terrace", "Private boardroom", "Dedicated chef option", "Mercedes-Benz S-Class airport transfer"]
+      }
+    ]
+  }
+]
