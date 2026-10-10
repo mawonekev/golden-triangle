@@ -2532,7 +2532,6 @@ document.addEventListener('DOMContentLoaded', () => {
       btnToggleMute.innerHTML = isMuted ?
         '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27l4.73 4.73H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg> Sound: Off' :
         '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg> Sound: On';
-      // Re-initialize player with new mute state
       const activeBtn = document.querySelector('.atmosphere-btn.active');
       const activeScene = activeBtn ? activeBtn.getAttribute('data-scene') : 'falls';
       setAtmosphereScene(activeScene);
@@ -2644,10 +2643,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter logic
     const filtered = ACTIVITIES.filter(act => {
-      // Category match
       const matchesCategory = (activeFilter === 'all') || (act.category === activeFilter);
-
-      // Search match
       const query = searchQuery.toLowerCase().trim();
       const matchesSearch = !query || 
         act.title.toLowerCase().includes(query) ||
@@ -2717,7 +2713,44 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <h3 class="activity-title">${act.title}</h3>
-            <p class="activity-desc">${act.description}</p>
+
+            <!-- Card Description with prominent Read More toggle -->
+            <div class="activity-desc-container">
+              <p class="activity-desc clamped" id="desc-${act.id}">${act.description}</p>
+              <button class="btn-read-more" data-id="${act.id}" aria-expanded="false" title="Click to read full description and details">
+                <span class="read-text">Read More</span>
+                <svg class="read-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+
+            <!-- In-Card Expandable Details (Inclusions, Quick Highlights, Schedule) -->
+            <div class="card-extra-details" id="extra-${act.id}">
+              ${act.inclusions && act.inclusions.length > 0 ? `
+                <div class="extra-block">
+                  <span class="extra-label">Key Inclusions:</span>
+                  <ul class="extra-inclusions-list">
+                    ${act.inclusions.slice(0, 3).map(inc => `<li><span class="tick">✓</span> ${inc}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+
+              ${act.quickFacts ? `
+                <div class="extra-block">
+                  <span class="extra-label">Quick Highlights:</span>
+                  <div class="extra-facts-tags">
+                    ${Object.entries(act.quickFacts).slice(0, 3).map(([k, v]) => `
+                      <span class="fact-tag"><strong>${k}:</strong> ${v}</span>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+
+              ${act.departures && act.departures[0] ? `
+                <div class="extra-departures">
+                  🕒 <strong>Schedule:</strong> ${act.departures[0]}
+                </div>
+              ` : ''}
+            </div>
 
             <div class="activity-perks">
               <span class="perk-tag">✓ Pickup Included</span>
@@ -2739,7 +2772,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
               <div class="card-actions">
                 <button class="btn-card-details" data-id="${act.id}">
-                  Details
+                  Full Specs
                 </button>
                 <button class="btn-card-book" data-id="${act.id}">
                   Book Now
@@ -2750,6 +2783,34 @@ document.addEventListener('DOMContentLoaded', () => {
         </article>
       `;
     }).join('');
+
+    // Attach Read More / Read Less toggles on each card
+    document.querySelectorAll('.btn-read-more').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id');
+        const descEl = document.getElementById(`desc-${id}`);
+        const extraEl = document.getElementById(`extra-${id}`);
+        const cardEl = btn.closest('.activity-card');
+        const readText = btn.querySelector('.read-text');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        if (isExpanded) {
+          btn.setAttribute('aria-expanded', 'false');
+          if (descEl) descEl.classList.add('clamped');
+          if (extraEl) extraEl.classList.remove('open');
+          if (cardEl) cardEl.classList.remove('card-expanded');
+          if (readText) readText.textContent = 'Read More';
+          btn.classList.remove('active');
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          if (descEl) descEl.classList.remove('clamped');
+          if (extraEl) extraEl.classList.add('open');
+          if (cardEl) cardEl.classList.add('card-expanded');
+          if (readText) readText.textContent = 'Read Less';
+          btn.classList.add('active');
+        }
+      });
+    });
 
     // Attach listeners to newly created cards
     document.querySelectorAll('.btn-card-details').forEach(btn => {
@@ -2790,7 +2851,6 @@ document.addEventListener('DOMContentLoaded', () => {
       activeFilter = tab.getAttribute('data-filter');
       updateActiveTab(activeFilter);
       renderActivities();
-      // Smooth scroll if clicked from lower section
       const catalogEl = document.getElementById('activities');
       if (catalogEl && window.scrollY > catalogEl.offsetTop + 300) {
         catalogEl.scrollIntoView({ behavior: 'smooth' });
@@ -3004,11 +3064,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const adults = parseInt(selectAdults ? selectAdults.value : '2', 10) || 1;
     const children = parseInt(selectChildren ? selectChildren.value : '0', 10) || 0;
 
-    // Children pay 50% on child-eligible activities
     const childRate = baseUSD * 0.5;
     let totalUSD = (adults * baseUSD) + (children * childRate);
 
-    // Addons
     if (chkPhotos && chkPhotos.checked) totalUSD += 40;
     if (chkParkFee && chkParkFee.checked) totalUSD += (adults + children) * 15;
     if (chkPrivateTransfer && chkPrivateTransfer.checked) totalUSD += 25;
@@ -3038,7 +3096,6 @@ document.addEventListener('DOMContentLoaded', () => {
       drawerPrice.textContent = `${formatPrice(p)} ${act.category === 'stay' ? '/ night' : 'per person'}`;
     }
 
-    // Default tomorrow's date
     if (inputDate) {
       const tomorrow = new Date();
       tomorrow.setDate(tomorrow.getDate() + 1);
@@ -3049,7 +3106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     bookingDialog.showModal();
   }
 
-  // Listeners for live recalculation
   [selectAdults, selectChildren, chkPhotos, chkParkFee, chkPrivateTransfer].forEach(el => {
     if (el) el.addEventListener('change', calculateBookingTotal);
   });
@@ -3064,7 +3120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Booking Form Submission & WhatsApp Direct Sync
+  // Booking Form Submission
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -3115,7 +3171,6 @@ document.addEventListener('DOMContentLoaded', () => {
     confirmCloseBtn.addEventListener('click', () => confirmDialog.close());
   }
 
-  // Header and Hero CTAs
   document.querySelectorAll('#btn-header-book, #btn-hero-book, #btn-book-chalet').forEach(btn => {
     btn.addEventListener('click', () => {
       const actName = btn.getAttribute('data-activity');
@@ -3124,7 +3179,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mobile navigation drawer toggle
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   if (mobileToggle && navMenu) {

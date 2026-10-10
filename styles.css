@@ -1040,15 +1040,175 @@ button {
   min-height: 3rem;
 }
 
+.activity-desc-container {
+  margin-bottom: 0.75rem;
+}
+
 .activity-desc {
   font-size: 0.88rem;
   color: #475569;
   line-height: 1.55;
-  margin-bottom: 1rem;
+  margin-bottom: 0.45rem;
+  transition: all 0.3s ease;
+}
+
+.activity-desc.clamped {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.activity-desc:not(.clamped) {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+  animation: fadeInText 0.25s ease-out;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0.5; transform: translateY(-2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #B48618;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-full);
+  padding: 0.22rem 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+  font-family: var(--font-sans);
+}
+
+.btn-read-more:hover {
+  background: rgba(212, 175, 55, 0.18);
+  border-color: var(--color-gold);
+  color: #8C660B;
+  transform: translateY(-1px);
+}
+
+.btn-read-more .read-icon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  stroke: currentColor;
+}
+
+.btn-read-more.active,
+.btn-read-more[aria-expanded="true"] {
+  background: #0B131F;
+  color: #D4AF37;
+  border-color: #D4AF37;
+}
+
+.btn-read-more.active .read-icon,
+.btn-read-more[aria-expanded="true"] .read-icon {
+  transform: rotate(180deg);
+}
+
+/* In-Card Expandable Details Drawer */
+.card-extra-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+  background: #F8FAFC;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  padding: 0 0.85rem;
+  margin-bottom: 0;
+}
+
+.card-extra-details.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.85rem;
+  margin-bottom: 0.85rem;
+  border-color: #E2E8F0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.extra-block {
+  margin-bottom: 0.65rem;
+}
+
+.extra-block:last-child {
+  margin-bottom: 0;
+}
+
+.extra-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748B;
+  margin-bottom: 0.3rem;
+}
+
+.extra-inclusions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.extra-inclusions-list li {
+  font-size: 0.78rem;
+  color: #334155;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  line-height: 1.35;
+}
+
+.extra-inclusions-list .tick {
+  color: #10B981;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.extra-facts-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.fact-tag {
+  font-size: 0.72rem;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #334155;
+}
+
+.fact-tag strong {
+  color: #0F172A;
+}
+
+.extra-departures {
+  font-size: 0.76rem;
+  color: #854D0E;
+  background: #FEF3C7;
+  border: 1px solid #FDE68A;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  line-height: 1.35;
+}
+
+.activity-card.card-expanded {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 12px 32px rgba(11, 19, 31, 0.12);
 }
 
 .activity-perks {
